@@ -87,9 +87,17 @@
       <Project>{0caa95ec-5eb3-4c94-a044-fd51851d57a5}</Project>
       <Name>ImageUtil</Name>
     </ProjectReference>
+    <ProjectReference Include="..\numsegejl.dk\Numsegejl.dk.csproj">
+      <Project>{8c0cf0dc-79f3-4477-a3f5-2fc204d638f1}</Project>
+      <Name>Numsegejl.dk</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Patteguf.dk\Patteguf.dk.csproj">
       <Project>{525312f9-ffdb-41e2-bc66-eb581c81c56a}</Project>
       <Name>Patteguf.dk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViktorsVerden\ViktorsVerden.csproj">
+      <Project>{067ff199-07f0-43a6-9478-da98dc0cc490}</Project>
+      <Name>ViktorsVerden</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

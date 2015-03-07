@@ -15,9 +15,7 @@ using ImageUtil;
 namespace ImageRipperWeb {
     public partial class QuickTestPage : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            for (int i = 1; i < 1186; i++) {
-                Patteguf.Ripper.RipPage("http://patteguf.dk/billede/" + i);
-            }
+            ViktorsVerden.Ripper.RipPage("http://viktors-verden.dk/elina/");
             /*using (var client = new WebClient()) {
                 //var url = "http://ekstrabladet.dk/side9/ekstra/elina/5464643";
                 //http://ekstrabladet.dk/side9/side9artikler/article4302379.ece
