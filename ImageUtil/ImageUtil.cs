@@ -78,8 +78,10 @@ namespace ImageUtil {
                 directory.Create();
 
             try {
-                using (var fStream = new FileStream(filename, FileMode.Create)) {
-                    fStream.Write(byteStream, 0, byteStream.Length);
+                if (byteStream != null) {
+                    using (var fStream = new FileStream(filename, FileMode.Create)) {
+                        fStream.Write(byteStream, 0, byteStream.Length);
+                    }
                 }
             }
             catch (ArgumentNullException ane) {
