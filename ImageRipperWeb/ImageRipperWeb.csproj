@@ -87,6 +87,10 @@
       <Project>{0caa95ec-5eb3-4c94-a044-fd51851d57a5}</Project>
       <Name>ImageUtil</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Patteguf.dk\Patteguf.dk.csproj">
+      <Project>{525312f9-ffdb-41e2-bc66-eb581c81c56a}</Project>
+      <Name>Patteguf.dk</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

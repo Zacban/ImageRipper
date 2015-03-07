@@ -13,7 +13,8 @@ using ImageUtil;
 namespace ImageRipperWeb {
     public partial class QuickTestPage : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            using (var client = new WebClient()) {
+            Patteguf.Ripper.RipPage("http://patteguf.dk/billede/4212");
+            /*using (var client = new WebClient()) {
                 //var url = "http://ekstrabladet.dk/side9/ekstra/elina/5464643";
                 //http://ekstrabladet.dk/side9/side9artikler/article4302379.ece
                 var startIndex = 5227181;
@@ -79,7 +80,7 @@ namespace ImageRipperWeb {
                     }
                 }
 
-            }
+            }*/
         }
     }
 }

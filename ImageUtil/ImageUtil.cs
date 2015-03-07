@@ -72,6 +72,11 @@ namespace ImageUtil {
         public static bool SaveImageStreamToFolder(Byte[] byteStream, string filename) {
             var success = false;
 
+            var dirPath = filename.Substring(0, filename.LastIndexOf('\\'));
+            var directory = new DirectoryInfo(dirPath);
+            if (!directory.Exists)
+                directory.Create();
+
             try {
                 using (var fStream = new FileStream(filename, FileMode.Create)) {
                     fStream.Write(byteStream, 0, byteStream.Length);
