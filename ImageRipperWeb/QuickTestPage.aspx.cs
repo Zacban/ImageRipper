@@ -10,10 +10,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using ImageUtil;
 
+//http://rate-en-babe.dk/81274/
+
 namespace ImageRipperWeb {
     public partial class QuickTestPage : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            Patteguf.Ripper.RipPage("http://patteguf.dk/billede/4212");
+            ViktorsVerden.Ripper.RipPage("http://viktors-verden.dk/elina/");
             /*using (var client = new WebClient()) {
                 //var url = "http://ekstrabladet.dk/side9/ekstra/elina/5464643";
                 //http://ekstrabladet.dk/side9/side9artikler/article4302379.ece
